@@ -1,0 +1,109 @@
+/* Estilo global */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background:#e6f3e7;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  h1 {
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Estilo de cada paso */
+  .step {
+    width: 300px;
+    background: #99da88;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  /*aca es el cambio de color de los cuadros al pasar el mouse sobre ellos*/
+  .step:hover#uno {
+    background: rgb(253, 253, 152);
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .step:hover#dos {
+    background: rgb(128, 192, 230);
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .step:hover#tres {
+    background: rgb(252, 165, 165);
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  .step h2 {
+    margin-top: 40px; /* Espacio para el círculo */
+    font-size: 1.5em;
+    color: rgb(8, 8, 10);
+    text-align: center;
+  }
+  
+  .step p {
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 1.6;
+    display: none;
+    color:black;
+    text-align: center; /* Centra el texto descriptivo */
+  }
+  
+  .step.active p {
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  /* Animación */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilo responsivo */
+  @media screen and (max-width: 768px) {
+    .step {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+  

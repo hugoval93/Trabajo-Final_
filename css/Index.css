@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f3e7;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7fdf5;
+  padding: 20px;
+}
+
+.header-content {
+  max-width: 50%;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #060607;
+}
+
+.header p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #6acc0d;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #32ca25;
+}
+
+.btn.secondary {
+  background-color: #6acc0d;
+  color: white;
+}
+
+.btn.secondary:hover {
+  background-color: #32ca25;
+}
+
+.header-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+.section#pros-contras {
+  position: relative; /* Hace que el contenedor sea un contenedor de posicionamiento */
+}
+.section h2 {
+  font-size: 2em;
+  text-align: center;
+  color:black;
+  text-decoration: underline;
+}
+
+
+.section#pros-contras h2 {
+  position: absolute; /* Posiciona el título absolutamente dentro del contenedor */
+  top: 0%; /* Centra verticalmente el título */
+  left: 50%; /* Centra horizontalmente el título */
+  transform: translate(-50%, -50%); /* Ajusta la posición para que el centro del título coincida con el centro del contenedor */
+  z-index: 1; /* Asegura que el título esté encima de la imagen */
+  
+}
+
+/* Contenedor general de la sección */
+.section#pros-contras {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  gap: 10px; /* Espacio entre la imagen y el texto */
+  padding: 60px;
+}
+
+/* Imagen alineada a la izquierda */
+.section#pros-contras img {
+  flex: 0 0 60%; /* La imagen ocupa el 40% del ancho */
+  max-width: 60%;
+  height: auto; /* Mantiene proporciones */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px #0000001a; /* Sombra ligera */
+  object-fit: cover; /* Ajusta la imagen si tiene proporciones variables */
+}
+
+/* Contenedor del texto */
+.section#pros-contras .pros-contras {
+  flex: 1 1 60%; /* El texto ocupa el 60% del ancho */
+  display: flex;
+  justify-content: space-between; /* Coloca las columnas (pros y contras) separadas */
+  flex-wrap: wrap; /* Adapta las columnas en pantallas pequeñas */
+  gap: 20px; /* Espacio entre las columnas */
+}
+
+.pros, .contras {
+  flex: 1 1 45%; /* Cada columna ocupa el 45% del espacio disponible */
+  margin: 0;
+}
+
+.pros ul, .contras ul {
+  padding: 0;
+  list-style: none; /* Elimina viñetas */
+}
+
+.pros li, .contras li {
+  margin: 10px 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .section#pros-contras {
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra todo el contenido */
+  }
+
+  .section#pros-contras img {
+    max-width: 80%; /* Ajusta el tamaño de la imagen */
+  }
+
+  .section#pros-contras .pros-contras {
+    flex-direction: column; /* Coloca las columnas una debajo de otra */
+    align-items: center; /* Centra el texto */
+  }
+
+  .pros, .contras {
+    max-width: 100%; /* Ocupa todo el ancho */
+    text-align: center; /* Centra el contenido */
+  }
+}
+
+
+
+  /* Estilos avance de la enrgia nuclear en Colombia */
+  .avance-colombia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  .content-body {
+    display: flex;
+    align-items: flex-start; /* Alinea imagen y texto al inicio verticalmente */
+    gap: 40px; /* Espaciado entre imagen y texto */
+  }
+  
+  .image-section {
+    flex: 0 0 40%; /* Imagen ocupa el 40% del ancho */
+    max-width: 40%;
+  }
+  
+  .image-section img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px #0000001a;
+  }
+  
+  .content-section {
+    flex: 1; /* Toma el espacio restante para el texto */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre bloques de texto */
+    text-align: left;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: black;
+  }
+  
+  .text h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: black;
+  }
+  
+  .text p {
+    font-size: 1rem;
+    color: black;
+    margin: 5px 0 0;
+  }
+  

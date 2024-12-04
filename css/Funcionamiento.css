@@ -1,0 +1,99 @@
+/* General Styles */
+/*  Esto es de la pagina de como funciona*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f3e7;
+}
+
+.container {
+    background-color: #64b84f;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(35, 184, 67, 0.3);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Section Styles */
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.section h3 {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+
+
+/* Info Box */
+#info-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e6f3e7;
+    color: black;
+    font-size: 1rem;
+    border-radius: 5px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Ajustesde las imagenes segun id*/
+#Fision img {
+    width: 50%; /* La imagen ocupará todo el ancho disponible del div */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 50%; /* Asegura que la imagen no exceda el tamaño del div */
+    border-radius: 5px; /* Opcional: bordes redondeados en la imagen */
+    object-fit: cover; /* Alternativa a 'contain' si prefieres que cubra todo el div, aunque se recorte */
+  }
+
+  #generacion img {
+    width: 50%; /* La imagen ocupará todo el ancho disponible del div */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    max-width: 50%; /* Asegura que la imagen no exceda el tamaño del div */
+    border-radius: 5px; /* Opcional: bordes redondeados en la imagen */
+    object-fit: cover; /* Alternativa a 'contain' si prefieres que cubra todo el div, aunque se recorte */
+  }
+
+
+#electricidad img {
+  width: 50%; /* La imagen ocupará todo el ancho disponible del div */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  max-width: 50%; /* Asegura que la imagen no exceda el tamaño del div */
+  border-radius: 5px; /* Opcional: bordes redondeados en la imagen */
+  object-fit: cover; /* Alternativa a 'contain' si prefieres que cubra todo el div, aunque se recorte */
+}
+  
